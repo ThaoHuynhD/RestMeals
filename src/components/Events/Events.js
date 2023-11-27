@@ -1,4 +1,5 @@
 import React from 'react'
+import './Events.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';

@@ -1,10 +1,9 @@
 import React from 'react'
-import './HomePage.scss'
-import Meals from './Meals'
-import HotTrends from './HotTrends'
-import BookTable from './BookTable'
-import Events from './Events'
-import Galleries from './Galleries'
+import Meals from '../../components/Meals/Meals'
+import HotTrends from '../../components/HotTrends/HotTrends'
+import Galleries from '../../components/Galleries/Galleries'
+import Events from '../../components/Events/Events'
+import BookTable from '../../components/BookTable'
 
 export default function HomePage() {
   return (

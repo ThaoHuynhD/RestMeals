@@ -9,7 +9,6 @@ export default function Banner() {
 
     let selectedContent = (bannerData.filter(content => content.key === key))[0];
 
-
     return (
         <div id='resBanner'>
             <div className='bgBanner'></div>

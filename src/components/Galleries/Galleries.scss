@@ -1,0 +1,22 @@
+@import '../../variablesScss.scss';
+
+#gallerries {
+    text-align: center;
+
+    .galleriesList {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        margin-bottom: 50px;
+
+        .picture-wrapper {
+            height: 300px;
+            border-radius: 5px;
+        }
+    }
+
+    .orangeBtn {
+        justify-content: center;
+        margin: auto;
+    }
+}

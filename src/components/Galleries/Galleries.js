@@ -1,5 +1,6 @@
 import React from 'react'
-import { waitingUpdate } from '../../components/UpdateFunction/UpdateFunction'
+import './Galleries.scss'
+import { waitingUpdate } from '../UpdateFunction/UpdateFunction'
 export default function Galleries() {
     return (
         <section id='gallerries'>

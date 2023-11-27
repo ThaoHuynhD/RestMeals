@@ -18,7 +18,7 @@ function App() {
     { path: '/Event', element: <Layout><EventPage /></Layout> },
     { path: '/Gallery', element: <Layout><GalleriesPage /></Layout> },
     { path: '/Menu', element: <Layout><MenuPage /></Layout> },
-    { path: '/*', element: <Layout><NotFoundPage /></Layout> },
+    { path: '/*', element: <NotFoundPage /> },
   ]
   return (
     <div className="App">

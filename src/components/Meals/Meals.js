@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './Meals.scss'
 import { mealsData } from '../../FakeData/MealsData';
 
 export default function Meals() {

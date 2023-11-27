@@ -1,13 +1,13 @@
 @import '../../variablesScss.scss';
 
 #resBanner {
-    padding-bottom: 0;
     width: 100vw;
     height: 800px;
     color: white;
-    margin: auto;
-    margin-top: 50px;
     overflow: hidden;
+    margin: auto;
+    padding-top: 50px;
+    position: relative;
 
     .bgBanner {
         background-image: url(../../../public/img/banner.jpg);

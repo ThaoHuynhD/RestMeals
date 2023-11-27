@@ -92,7 +92,9 @@ p {
     border: 1px solid transparent;
     border-radius: 20px;
     transition: all 0.5s;
-
+    font-family: $font-family-header;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     &:hover,
     &:active {
         color: white;
@@ -147,7 +149,28 @@ p {
     font-family: $font-family-header;
     letter-spacing: 2px;
 }
+.bg {
+    background-image: url(https://i.pinimg.com/564x/fa/06/d1/fa06d1b4887b342924d928ffa0b3b123.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
 
+    &::after {
+        content: '';
+        display: block;
+        width: 100vw;
+        height: 100%;
+        background-color: $bg-color-yellow-2;
+        opacity: 0.9;
+        transition: all 0.5s;
+    }
+}
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: $orange-color-1;
 }

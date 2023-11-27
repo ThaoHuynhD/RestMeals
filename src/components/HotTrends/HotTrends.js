@@ -1,4 +1,5 @@
 import React from 'react'
+import './HotTrends.scss'
 import { hotTrendsData } from '../../FakeData/HotTrendsData'
 export default function HotTrends() {
     return (
