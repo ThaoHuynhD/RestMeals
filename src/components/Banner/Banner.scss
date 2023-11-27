@@ -1,0 +1,108 @@
+$orange-color : #dd4d19;
+$gray-color: #535353;
+$font-family-header: 'Playpen Sans', cursive;
+
+#resBanner {
+    padding-bottom: 0;
+    width: 100vw;
+    height: 800px;
+    color: white;
+    margin: auto;
+    margin-top: 50px;
+    overflow: hidden;
+
+    .bgBanner {
+        background-image: url(../../../public/img/banner.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        &::after {
+            content: '';
+            display: block;
+            background-color: black;
+            opacity: 0.7;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .container {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        text-align: center;
+
+        .content {
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(0%, 25%);
+
+            span {
+                text-transform: uppercase;
+                position: relative;
+                font-weight: bold;
+                font-family: $font-family-header;
+                letter-spacing: 3px;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    background-color: $orange-color;
+                    border-radius: 20px;
+                    width: 50%;
+                    height: 5px;
+                    position: absolute;
+                    left: 25%;
+                    bottom: -15px;
+                }
+            }
+
+            h1 {
+                font-size: 80px;
+                padding: 40px 0 0;
+                margin: 40px 20px;
+            }
+
+            p {
+                font-size: 24px;
+                width: 60%;
+                margin: auto;
+                margin-bottom: 40px;
+                line-height: 2;
+            }
+        }
+
+        .socialBtn {
+            position: absolute;
+            bottom: 50px;
+            right: 0;
+
+            ul {
+                display: flex;
+                gap: 10px;
+
+                .orangeOutLineBtn {
+                    padding: 0;
+                    border-radius: 15px;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}

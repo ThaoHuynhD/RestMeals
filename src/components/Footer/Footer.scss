@@ -1,0 +1,63 @@
+$gray-color2: #a5a5a5;
+$orange-color : #dd4d19;
+$font-family-header: 'Playpen Sans', cursive;
+
+#resFooter {
+    background-color: rgb(27, 27, 27);
+    color: white;
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-bottom: 80px;
+
+        .col-logo {
+            grid-column: 1 / span 2;
+            color: $orange-color;
+        }
+
+        li {
+            line-height: 1.8;
+
+            a {
+                color: $gray-color2;
+                text-decoration: none;
+
+                &:hover {
+                    color: white;
+                }
+            }
+
+            p {
+                font-family: $font-family-header;
+                color: gray;
+            }
+        }
+
+        .socialBtn {
+            display: flex;
+            gap: 10px;
+            padding-left: 0;
+            margin-top: 30px;
+
+            .orangeOutLineBtn {
+                color: black;
+                padding: 0;
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+
+                &:hover {
+                    color: white;
+                }
+            }
+
+        }
+    }
+
+    p span {
+        color: $orange-color;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+}

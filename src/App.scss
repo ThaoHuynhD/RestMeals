@@ -1,0 +1,147 @@
+$orange-color : #dd4d19;
+$orange-color2: #b33304;
+$bg-color-yellow: #f7dab4;
+$gray-color: #535353;
+$shadow-type1: 0 10px 15px -3px rgba(179, 94, 25, 0.1), 0 4px 6px -4px rgba(255, 77, 42, 0.1);
+$font-family-header: 'Playpen Sans', cursive;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $font-family-header;
+    letter-spacing: 2px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    transition: all 0.5s;
+}
+
+button {
+    cursor: pointer;
+}
+
+.headerSpan {
+    text-transform: uppercase;
+    color: $gray-color;
+    font-family: $font-family-header;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.headerTitle {
+    font-size: 40px;
+    font-weight: normal;
+    margin: 10px 0 30px;
+    font-family: $font-family-header;
+
+    span {
+        color: $orange-color;
+        font-weight: bold;
+    }
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.orangeBtn {
+    padding: 12px 36px;
+    color: white;
+    background-color: $orange-color;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: all 0.5s;
+    font-family: $font-family-header;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &:hover,
+    &:active {
+        background-color: #b33304;
+    }
+}
+
+.orangeOutLineBtn {
+    padding: 12px 36px;
+    color: $orange-color;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: all 0.5s;
+
+    &:hover,
+    &:active {
+        color: white;
+        background-color: $orange-color;
+    }
+}
+
+.whiteBtn {
+    padding: 12px 36px;
+    color: black;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin: 10px;
+    border-radius: 20px;
+    transition: all 0.5s;
+    font-size: 20px;
+
+    &:hover,
+    &:active,
+    &.active {
+        color: $orange-color;
+        background-color: white;
+        box-shadow: $shadow-type1;
+    }
+
+}
+
+.picture-wrapper {
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.5s;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: all 0.5s;
+
+        &:hover {
+            transform: scale(1.1);
+
+        }
+    }
+}
+
+.price {
+    color: $orange-color;
+    font-weight: bold;
+    font-family: $font-family-header;
+    letter-spacing: 2px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: $orange-color;
+}
