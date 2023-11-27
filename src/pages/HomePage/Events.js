@@ -1,7 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
-import './Events.scss'
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -25,7 +24,7 @@ export default function Events() {
                     >
                         <SwiperSlide className='event__item'>
                             <div className='content'>
-                                <h1 className='headerTitle'><span>$200.99</span></h1>
+                                <h1 className='headerTitle'><span>399.000 VND</span></h1>
                                 <h1 className='headerTitle'>Guest Chef Night Party</h1>
                                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
                                 <ul>
@@ -39,7 +38,7 @@ export default function Events() {
                         <SwiperSlide className='event__item'>
                             <div className='picture-wrapper'><img src='https://i.pinimg.com/564x/94/40/70/94407031b6ed7802d3eb2fdc4dcce77f.jpg' alt='' /></div>
                             <div className='content'>
-                                <h1 className='headerTitle'><span>$199.99</span></h1>
+                                <h1 className='headerTitle'><span>199.000 VND</span></h1>
                                 <h1 className='headerTitle'>Birthday Night Party</h1>
                                 <p>
                                     "At our restaurant, we don't just serve food; we craft experiences. From the sizzle in our kitchen to the warmth at your table, every moment is a celebration of flavor and community."</p>

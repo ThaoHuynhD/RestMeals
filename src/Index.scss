@@ -1,4 +1,4 @@
-$bg-color-yellow: #f7dab4;
+@import './variablesScss.scss';
 
 html,
 body {
@@ -9,5 +9,5 @@ body {
 body {
     padding: 0;
     margin: 0;
-    background-color: $bg-color-yellow;
+    background-color: $bg-color-yellow-1;
 }

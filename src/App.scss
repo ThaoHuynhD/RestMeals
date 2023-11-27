@@ -1,9 +1,4 @@
-$orange-color : #dd4d19;
-$orange-color2: #b33304;
-$bg-color-yellow: #f7dab4;
-$gray-color: #535353;
-$shadow-type1: 0 10px 15px -3px rgba(179, 94, 25, 0.1), 0 4px 6px -4px rgba(255, 77, 42, 0.1);
-$font-family-header: 'Playpen Sans', cursive;
+@import './variablesScss.scss';
 
 h1,
 h2,
@@ -26,6 +21,10 @@ ul {
     list-style: none;
 }
 
+li {
+    list-style: none;
+}
+
 a {
     transition: all 0.5s;
 }
@@ -34,9 +33,13 @@ button {
     cursor: pointer;
 }
 
+p {
+    text-align: justify;
+}
+
 .headerSpan {
     text-transform: uppercase;
-    color: $gray-color;
+    color: $gray-color-1;
     font-family: $font-family-header;
     font-size: 14px;
     letter-spacing: 3px;
@@ -49,7 +52,7 @@ button {
     font-family: $font-family-header;
 
     span {
-        color: $orange-color;
+        color: $orange-color-1;
         font-weight: bold;
     }
 }
@@ -68,7 +71,7 @@ button {
 .orangeBtn {
     padding: 12px 36px;
     color: white;
-    background-color: $orange-color;
+    background-color: $orange-color-1;
     border: 1px solid transparent;
     border-radius: 20px;
     transition: all 0.5s;
@@ -84,7 +87,7 @@ button {
 
 .orangeOutLineBtn {
     padding: 12px 36px;
-    color: $orange-color;
+    color: $orange-color-1;
     background-color: white;
     border: 1px solid transparent;
     border-radius: 20px;
@@ -93,7 +96,7 @@ button {
     &:hover,
     &:active {
         color: white;
-        background-color: $orange-color;
+        background-color: $orange-color-1;
     }
 }
 
@@ -110,9 +113,9 @@ button {
     &:hover,
     &:active,
     &.active {
-        color: $orange-color;
+        color: $orange-color-1;
         background-color: white;
-        box-shadow: $shadow-type1;
+        box-shadow: $shadow-type-1;
     }
 
 }
@@ -121,6 +124,9 @@ button {
     width: 100%;
     overflow: hidden;
     transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img {
         max-width: 100%;
@@ -136,12 +142,12 @@ button {
 }
 
 .price {
-    color: $orange-color;
+    color: $orange-color-1;
     font-weight: bold;
     font-family: $font-family-header;
     letter-spacing: 2px;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: $orange-color;
+    background-color: $orange-color-1;
 }

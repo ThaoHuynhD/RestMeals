@@ -1,6 +1,4 @@
-$gray-color2: #a5a5a5;
-$orange-color : #dd4d19;
-$font-family-header: 'Playpen Sans', cursive;
+@import '../../variablesScss.scss';
 
 #resFooter {
     background-color: rgb(27, 27, 27);
@@ -9,18 +7,20 @@ $font-family-header: 'Playpen Sans', cursive;
     .content {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        margin-bottom: 80px;
 
         .col-logo {
             grid-column: 1 / span 2;
-            color: $orange-color;
+
+            h1 {
+                color: $orange-color-1;
+            }
         }
 
         li {
             line-height: 1.8;
 
             a {
-                color: $gray-color2;
+                color: $gray-color-2;
                 text-decoration: none;
 
                 &:hover {
@@ -56,8 +56,70 @@ $font-family-header: 'Playpen Sans', cursive;
     }
 
     p span {
-        color: $orange-color;
+        color: $orange-color-1;
         margin-left: 10px;
         font-weight: bold;
+    }
+
+    #testimonials {
+        .testimonials__item {
+            margin-bottom: 50px;
+
+            .flex-center {
+                justify-content: start;
+
+                .profile {
+                    margin-left: 20px;
+                }
+            }
+
+            .picture-wrapper {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+
+            h3 {
+                color: $orange-color-1;
+                margin-bottom: 0;
+            }
+
+            span {
+                font-size: 14px;
+                font-weight: bold;
+                color: $gray-color-1;
+                font-family: $font-family-header;
+            }
+
+            p {
+                width: 75%;
+                font-family: $font-family-header;
+                color: $gray-color-2;
+                font-weight: lighter;
+                font-size: 16px;
+                padding: 20px 0;
+
+                i {
+                    margin: 0 5px;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .swiper-pagination-bullet {
+            background-color: white;
+        }
+
+        .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: $orange-color-1;
+        }
+
+        .swiper-pagination-fraction,
+        .swiper-pagination-custom,
+        .swiper-horizontal>.swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal {
+            width: 60px !important;
+        }
+
     }
 }

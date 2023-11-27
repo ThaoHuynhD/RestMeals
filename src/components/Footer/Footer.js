@@ -2,6 +2,7 @@ import React from 'react'
 import './Footer.scss'
 import { NavLink } from 'react-router-dom'
 import { waitingUpdate } from '../UpdateFunction/UpdateFunction'
+import Testimonials from './Testimonials'
 
 export default function Footer() {
     return (
@@ -10,7 +11,8 @@ export default function Footer() {
                 <div className="content">
                     <ul className='col col-logo'>
                         <h1>About RestMeals</h1>
-                        <li><p>At our restaurant, we don't just serve food; we craft experiences. From the sizzle in our kitchen to the warmth at your table, every moment is a celebration of flavor and community.</p></li>
+                        <Testimonials />
+                        {/* <li><p>At our restaurant, we don't just serve food; we craft experiences. From the sizzle in our kitchen to the warmth at your table, every moment is a celebration of flavor and community.</p></li>
                         <li>
                             <ul className='socialBtn'>
                                 <li><button className='orangeOutLineBtn flex-center'
@@ -20,7 +22,7 @@ export default function Footer() {
                                 <li><button className='orangeOutLineBtn flex-center'
                                     onClick={() => { waitingUpdate() }}><i className="fa-brands fa-twitter"></i></button></li>
                             </ul>
-                        </li>
+                        </li> */}
                     </ul>
                     <ul className='col'>
                         <h2>Projects</h2>

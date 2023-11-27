@@ -1,5 +1,5 @@
 import React from 'react'
-import { waitingUpdate } from '../../../components/UpdateFunction/UpdateFunction'
+import { waitingUpdate } from '../../components/UpdateFunction/UpdateFunction'
 
 export default function BookTable() {
     return (

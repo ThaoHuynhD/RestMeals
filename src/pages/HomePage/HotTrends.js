@@ -1,9 +1,9 @@
 import React from 'react'
-import './HotTrends.scss'
-import { hotTrendsData } from '../../../FakeData/HotTrendsData'
+import { hotTrendsData } from '../../FakeData/HotTrendsData'
 export default function HotTrends() {
     return (
         <section id='hotTrends'>
+            <div className='bg'></div>
             <div className="container">
                 <div className="title">
                     <span className='headerSpan'>Choose Your Favorites</span>
