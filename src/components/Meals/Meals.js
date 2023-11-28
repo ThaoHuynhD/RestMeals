@@ -16,7 +16,7 @@ export default function Meals() {
                             {mealsData.map(type => <li key={type.key}>
                                 <button className={`whiteBtn flex-center ${selectedFoodType === type.key ? 'active' : ''}`}
                                     onClick={() => { setSelectedFoodType(type.key) }}>
-                                    <img src={type.icon} alt="" />{type.title}</button>
+                                    <img src={type.icon} alt={type.title} /><span>{type.title}</span></button>
                             </li>
                             )}
                         </div>

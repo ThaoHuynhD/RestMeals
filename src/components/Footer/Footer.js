@@ -53,7 +53,9 @@ export default function Footer() {
                         </li>
                     </ul>
                 </div>
-                <p className='flex-center'>Copyright ©2023 All rights reserved | This template is made with by <span> H3T</span></p>
+                <div className="flex-center">
+                    <p>Copyright ©2023 All rights reserved | This template is made with by <span> H3T</span></p>
+                </div>
             </div>
         </section>
     )

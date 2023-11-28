@@ -180,3 +180,31 @@ p {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: $color-orange-1;
 }
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+    .container {
+        width: 95%;
+    }
+
+    .headerSpan {
+        font-size: 1rem;
+    }
+
+    .headerTitle {
+        font-size: 2rem;
+    }
+
+    .orangeBtn {
+        font-size: 1rem;
+    }
+}

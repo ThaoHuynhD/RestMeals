@@ -25,12 +25,12 @@ export default function Events() {
                     >
                         <SwiperSlide className='event__item'>
                             <div className='content'>
-                                <h1 className='headerTitle'><span>399.000 VND</span></h1>
+                                <p className='headerTitle'><span>399.000 VND</span></p>
                                 <h1 className='headerTitle'>Guest Chef Night Party</h1>
                                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
                                 <ul>
                                     <li><i className="fa-solid fa-check flex-center"></i>Away behind the word</li>
-                                    <li><i className="fa-solid fa-check flex-center"></i>Bookmarksgrove right at the coast</li>
+                                    <li><i className="fa-solid fa-check flex-center"></i>Bookmarks grove right at the coast</li>
                                     <li><i className="fa-solid fa-check flex-center"></i>Separated they live</li>
                                 </ul>
                             </div>
@@ -45,7 +45,7 @@ export default function Events() {
                                     "At our restaurant, we don't just serve food; we craft experiences. From the sizzle in our kitchen to the warmth at your table, every moment is a celebration of flavor and community."</p>
                                 <ul>
                                     <li><i className="fa-solid fa-check flex-center"></i>Away behind the word</li>
-                                    <li><i className="fa-solid fa-check flex-center"></i>Bookmarksgrove right at the coast</li>
+                                    <li><i className="fa-solid fa-check flex-center"></i>Bookmarks grove right at the coast</li>
                                     <li><i className="fa-solid fa-check flex-center"></i>Separated they live</li>
                                 </ul>
                             </div>

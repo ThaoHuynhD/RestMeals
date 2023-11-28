@@ -70,3 +70,75 @@
         }
     }
 }
+
+
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+    #Meals {
+        .content {
+            display: block;
+
+            .menu {
+                width: 100%;
+                text-align: center;
+
+                .selection {
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    margin: 0;
+
+
+
+                    .whiteBtn {
+                        padding: 10px;
+                        font-size: 0.8rem;
+                        font-weight: bold;
+                        width: 55px;
+                        margin: 5px;
+
+                        img {
+                            width: 40px;
+                            margin-right: 0;
+                        }
+
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .detail {
+                margin: 0;
+
+                h1 {
+                    margin: 0;
+                }
+
+                .foodList {
+                    display: block;
+
+
+                    .foodItem {
+                        margin: 20px 0;
+
+                        .picture-wrapper img {
+                            width: 100%;
+                            min-height: 250px;
+                        }
+
+                        .food-content {
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -33,9 +33,10 @@
                         border-radius: 50%;
                         border: 1px solid $color-orange-1;
                         color: $color-orange-1;
-                        width: 30px;
-                        height: 30px;
-                        margin: 5px 20px;
+                        width: 32px;
+                        min-width: 32px;
+                        height: 32px;
+                        margin: 5px 20px 5px 0;
                     }
                 }
             }
@@ -43,10 +44,46 @@
 
         .picture-wrapper {
             animation: $animation-fromRightToLeft;
-
             border-radius: 20px;
             height: 450px;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    #Events {
+        .title {
+            p {
+                width: 100%;
+            }
         }
 
+        .event__item {
+            grid-template-columns: repeat(1, 1fr);
+            grid-area: 20px;
+
+            p.headerTitle {
+                margin: 0;
+
+                span {
+                    font-size: 1.5rem;
+                    margin: 0;
+                }
+            }
+
+            .content {
+                margin: 0;
+            }
+
+            .picture-wrapper {
+                height: 400px;
+
+                img {
+                    width: fit-content;
+                    height: fit-content;
+                }
+            }
+        }
     }
 }

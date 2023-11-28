@@ -5,20 +5,14 @@ import { waitingUpdate } from '../UpdateFunction/UpdateFunction'
 import { useDispatch, useSelector } from 'react-redux';
 import { SET_SELECTED_KEY, START_LOADING } from '../../constant/constant';
 export default function Header() {
+    const [isAtTop, setIsAtTop] = useState(true);
     let selectedKey = useSelector(state => state.headerReducer.selectedKey);
     const dispatch = useDispatch();
     const handleButtonClick = (path) => {
         dispatch({ type: SET_SELECTED_KEY, payload: path });
         dispatch({ type: START_LOADING });
     };
-    const [isAtTop, setIsAtTop] = useState(true);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsAtTop(document.documentElement.scrollTop === 0);
-        };
-        window.addEventListener('scroll', handleScroll);
-    }, []);
     let userNavLink = [
         { title: 'Home', path: '/' },
         { title: 'Menu', path: '/Menu' },
@@ -27,6 +21,14 @@ export default function Header() {
         { title: 'About', path: '/About' },
         { title: 'Contact', path: '/Contact' },
     ];
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsAtTop(document.documentElement.scrollTop === 0);
+        };
+        window.addEventListener('scroll', handleScroll);
+    }, []);
+
     useEffect(() => {
         const navLinkHeaders = document.querySelectorAll('.headerBtn');
         navLinkHeaders.forEach((navLink) => {
@@ -36,6 +38,7 @@ export default function Header() {
             }
         });
     }, [selectedKey]);
+
     return (
         <div>
             <div id='resHeader'>
