@@ -2,22 +2,44 @@
 
 #resFooter {
     background-color: rgb(27, 27, 27);
-    color: white;
+    color: $gray-color-1;
 
     .content {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(7, 1fr);
 
         .col-logo {
-            grid-column: 1 / span 2;
+            grid-column: 1 / span 3;
 
             h1 {
                 color: gold;
             }
         }
 
+        .col-contact {
+            grid-column: 6 / span 2;
+
+            li {
+                color: $gray-color-1;
+            }
+
+            i {
+                margin-right: 10px;
+                transition: all 0.5s;
+            }
+
+            li:hover i {
+                color: white;
+            }
+        }
+
+        ul {
+            padding: 0;
+        }
+
         li {
-            line-height: 1.8;
+            line-height: 2.5;
+            font-size: 16px;
 
             a {
                 color: $gray-color-1;
@@ -51,6 +73,9 @@
                 }
             }
 
+            i {
+                margin: 0;
+            }
         }
     }
 

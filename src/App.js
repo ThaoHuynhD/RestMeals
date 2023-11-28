@@ -8,8 +8,19 @@ import ContactPage from './pages/ContactPage/ContactPage';
 import EventPage from './pages/EventPage/EventPage';
 import GalleriesPage from './pages/GalleriesPage/GalleriesPage';
 import MenuPage from './pages/MenuPage/MenuPage';
+import { BounceLoader } from 'react-spinners';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { STOP_LOADING } from './constant/constant';
 
 function App() {
+  let isLoading = useSelector(state => state.headerReducer.isLoading)
+  const dispatch = useDispatch();
+  useEffect(() => {
+    setTimeout(() => {
+      dispatch({ type: STOP_LOADING });
+    }, 2000);
+  }, [isLoading]);
   let userRoutes = [
     { path: '/', element: <Layout><HomePage /></Layout> },
     { path: '/Home', element: <Layout><HomePage /></Layout> },
@@ -22,13 +33,19 @@ function App() {
   ]
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          {userRoutes.map((route) => (
-            <Route key={route.path} path={route.path} element={route.element} />
-          ))}
-        </Routes>
-      </BrowserRouter>
+      {isLoading ? (
+        <div className="spinner flex-center">
+          <BounceLoader color="#dd4d19" size={80} />
+        </div>
+      ) : (
+        <BrowserRouter>
+          <Routes>
+            {userRoutes.map((route) => (
+              <Route key={route.path} path={route.path} element={route.element} />
+            ))}
+          </Routes>
+        </BrowserRouter>
+      )}
     </div>
   );
 }

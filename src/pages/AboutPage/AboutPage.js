@@ -1,7 +1,7 @@
 import React from 'react'
 import './AboutPage.scss'
 import { waitingUpdate } from '../../components/UpdateFunction/UpdateFunction'
-import { chefInfo, chooseUsData } from '../../FakeData/AboutPageData'
+import { chefInfo, chooseUsData } from '../../fakeData/AboutPageData'
 export default function AboutPage() {
   return (
     <div>

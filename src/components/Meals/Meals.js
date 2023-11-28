@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Meals.scss'
-import { mealsData } from '../../FakeData/MealsData';
+import { mealsData } from '../../fakeData/MealsData';
 
 export default function Meals() {
     let [selectedFoodType, setSelectedFoodType] = useState('Breakfast');

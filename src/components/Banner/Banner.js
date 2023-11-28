@@ -1,6 +1,6 @@
 import React from 'react'
 import './Banner.scss'
-import { bannerData } from '../../FakeData/BannerData'
+import { bannerData } from '../../fakeData/BannerData'
 import { waitingUpdate } from '../UpdateFunction/UpdateFunction'
 
 export default function Banner() {

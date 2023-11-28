@@ -1,8 +1,12 @@
 import React from 'react'
 import './Galleries.scss'
-import { waitingUpdate } from '../UpdateFunction/UpdateFunction'
-import { galleriesData } from '../../FakeData/GalleriesData'
+import { galleriesData } from '../../fakeData/GalleriesData'
+import { useNavigate } from 'react-router-dom'
 export default function Galleries() {
+    let navigate = useNavigate();
+    let handleBtnNavigate = (path) => {
+        navigate(path);
+    }
     return (
         <section id='gallerries'>
             <div className="container">
@@ -17,7 +21,7 @@ export default function Galleries() {
                         </div>
                     })}
                 </div>
-                <button className='orangeBtn' onClick={() => { waitingUpdate() }} >MORE GALLERIES</button>
+                <button className='orangeBtn' onClick={() => { handleBtnNavigate('/Gallery') }} >MORE GALLERIES</button>
             </div>
         </section>
     )

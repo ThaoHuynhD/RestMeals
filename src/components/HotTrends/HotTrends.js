@@ -1,6 +1,6 @@
 import React from 'react'
 import './HotTrends.scss'
-import { hotTrendsData } from '../../FakeData/HotTrendsData'
+import { hotTrendsData } from '../../fakeData/HotTrendsData'
 export default function HotTrends() {
     return (
         <section id='hotTrends'>
