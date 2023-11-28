@@ -19,6 +19,7 @@
 
         .content {
             margin: 0 50px;
+            animation: $animation-fromLeftToRight;
 
             ul {
                 padding-left: 0;
@@ -30,8 +31,8 @@
 
                     i {
                         border-radius: 50%;
-                        border: 1px solid $orange-color-1;
-                        color: $orange-color-1;
+                        border: 1px solid $color-orange-1;
+                        color: $color-orange-1;
                         width: 30px;
                         height: 30px;
                         margin: 5px 20px;
@@ -41,6 +42,8 @@
         }
 
         .picture-wrapper {
+            animation: $animation-fromRightToLeft;
+
             border-radius: 20px;
             height: 450px;
         }

@@ -14,13 +14,9 @@ import { useEffect } from 'react';
 import { STOP_LOADING } from './constant/constant';
 
 function App() {
-  let isLoading = useSelector(state => state.headerReducer.isLoading)
+  let isLoading = useSelector(state => state.headerReducer.isLoading);
   const dispatch = useDispatch();
-  useEffect(() => {
-    setTimeout(() => {
-      dispatch({ type: STOP_LOADING });
-    }, 2000);
-  }, [isLoading]);
+
   let userRoutes = [
     { path: '/', element: <Layout><HomePage /></Layout> },
     { path: '/Home', element: <Layout><HomePage /></Layout> },
@@ -31,6 +27,13 @@ function App() {
     { path: '/Menu', element: <Layout><MenuPage /></Layout> },
     { path: '/*', element: <NotFoundPage /> },
   ]
+
+  useEffect(() => {
+    setTimeout(() => {
+      dispatch({ type: STOP_LOADING });
+    }, 1000);
+  }, [isLoading]);
+
   return (
     <div className="App">
       {isLoading ? (

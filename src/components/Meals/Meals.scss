@@ -1,8 +1,6 @@
 @import '../../variablesScss.scss';
 
 #Meals {
-    margin-top: 100px;
-
     .content {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -14,7 +12,7 @@
                 font-weight: normal;
 
                 span {
-                    color: $orange-color-1;
+                    color: $color-orange-1;
                     font-weight: bold;
                 }
             }
@@ -56,8 +54,9 @@
                 .foodItem {
                     border-radius: 15px;
                     overflow: hidden;
-                    box-shadow: $shadow-type-1;
-                    background-color: $yellow-color-2;
+                    box-shadow: $box-shadow-1;
+                    background-color: $color-yellow-2;
+                    animation: $animation-fadeIn;
 
                     .picture-wrapper {
                         height: 250px;

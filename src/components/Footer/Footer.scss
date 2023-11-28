@@ -2,7 +2,7 @@
 
 #resFooter {
     background-color: rgb(27, 27, 27);
-    color: $gray-color-1;
+    color: $color-gray-1;
 
     .content {
         display: grid;
@@ -20,7 +20,7 @@
             grid-column: 6 / span 2;
 
             li {
-                color: $gray-color-1;
+                color: $color-gray-1;
             }
 
             i {
@@ -42,7 +42,7 @@
             font-size: 16px;
 
             a {
-                color: $gray-color-1;
+                color: $color-gray-1;
                 text-decoration: none;
 
                 &:hover {
@@ -80,7 +80,7 @@
     }
 
     p span {
-        color: $orange-color-1;
+        color: $color-orange-1;
         font-weight: bold;
         margin-left: 10px;
     }
@@ -104,18 +104,18 @@
             }
 
             h3 {
-                color: $orange-color-1;
+                color: $color-orange-1;
                 margin-bottom: 0;
             }
 
             span {
-                color: $gray-color-2;
+                color: $color-gray-2;
                 font-size: 14px;
                 font-weight: bold;
             }
 
             p {
-                color: $gray-color-1;
+                color: $color-gray-1;
                 font-size: 16px;
                 font-weight: lighter;
                 width: 75%;
@@ -133,7 +133,7 @@
         }
 
         .swiper-pagination-bullet.swiper-pagination-bullet-active {
-            background-color: $orange-color-1;
+            background-color: $color-orange-1;
         }
 
         .swiper-pagination-fraction,

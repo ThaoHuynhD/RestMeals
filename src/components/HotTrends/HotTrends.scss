@@ -14,16 +14,21 @@
     }
 
     .food {
-        box-shadow: $shadow-type-1;
+        box-shadow: $box-shadow-1;
         border-radius: 20px;
         overflow: hidden;
 
         .picture-wrapper {
             height: 200px;
+
+            img {
+                height: 100%;
+            }
+
         }
 
         .content {
-            background-color: $yellow-color-2;
+            background-color: $color-yellow-2;
             padding: 15px;
 
             h3 {
@@ -31,7 +36,7 @@
             }
 
             p {
-                color: $orange-color-1;
+                color: $color-orange-1;
                 margin-top: 10px;
             }
         }

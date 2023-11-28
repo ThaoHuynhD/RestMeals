@@ -42,7 +42,7 @@ p {
 
 .headerSpan {
     text-transform: uppercase;
-    color: $gray-color-2;
+    color: $color-gray-2;
     font-size: 14px;
     letter-spacing: 3px;
 }
@@ -53,7 +53,7 @@ p {
     margin: 10px 0 30px;
 
     span {
-        color: $orange-color-1;
+        color: $color-orange-1;
         font-weight: bold;
     }
 }
@@ -70,7 +70,7 @@ p {
 }
 
 .orangeBtn {
-    background-color: $orange-color-1;
+    background-color: $color-orange-1;
     border: 1px solid transparent;
     border-radius: 20px;
     color: white;
@@ -89,7 +89,7 @@ p {
 }
 
 .orangeOutLineBtn {
-    color: $orange-color-1;
+    color: $color-orange-1;
     background-color: white;
     border: 1px solid transparent;
     border-radius: 20px;
@@ -100,7 +100,7 @@ p {
 
     &:hover,
     &:active {
-        background-color: $orange-color-1;
+        background-color: $color-orange-1;
         color: white;
     }
 }
@@ -119,8 +119,8 @@ p {
     &:active,
     &.active {
         background-color: white;
-        box-shadow: $shadow-type-1;
-        color: $orange-color-1;
+        box-shadow: $box-shadow-1;
+        color: $color-orange-1;
     }
 
 }
@@ -135,9 +135,8 @@ p {
 
     img {
         display: block;
-        height: auto;
-        max-width: 100%;
         transition: all 0.5s;
+        width: 100%;
 
         &:hover {
             transform: scale(1.1);
@@ -146,7 +145,7 @@ p {
 }
 
 .price {
-    color: $orange-color-1;
+    color: $color-orange-1;
     font-weight: bold;
     letter-spacing: 2px;
 }
@@ -164,7 +163,7 @@ p {
     z-index: -2;
 
     &::after {
-        background-color: $yellow-color-3;
+        background-color: $color-yellow-3;
         content: '';
         display: block;
         width: 100vw;
@@ -179,5 +178,5 @@ p {
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: $orange-color-1;
+    background-color: $color-orange-1;
 }

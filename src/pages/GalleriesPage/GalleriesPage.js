@@ -3,8 +3,8 @@ import Galleries from '../../components/Galleries/Galleries'
 
 export default function GalleriesPage() {
   return (
-    <section>
+    <div>
       <Galleries />
-    </section>
+    </div>
   )
 }

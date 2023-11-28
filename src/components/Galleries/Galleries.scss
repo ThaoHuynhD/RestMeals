@@ -12,10 +12,19 @@
         .picture-wrapper {
             border-radius: 5px;
             height: 300px;
+            transition: $animation-fromBottomToTop;
+
+            img {
+                height: 100%;
+            }
         }
     }
 
     .orangeBtn {
         justify-content: center;
+
+        &.hidden {
+            display: none;
+        }
     }
 }
