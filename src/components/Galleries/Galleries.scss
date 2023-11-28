@@ -5,18 +5,17 @@
 
     .galleriesList {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
         gap: 5px;
+        grid-template-columns: repeat(4, 1fr);
         margin-bottom: 50px;
 
         .picture-wrapper {
-            height: 300px;
             border-radius: 5px;
+            height: 300px;
         }
     }
 
     .orangeBtn {
         justify-content: center;
-        margin: auto;
     }
 }

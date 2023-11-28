@@ -5,7 +5,6 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: $font-family-header;
     letter-spacing: 2px;
 }
 
@@ -37,10 +36,13 @@ p {
     text-align: justify;
 }
 
+.title {
+    text-align: center;
+}
+
 .headerSpan {
     text-transform: uppercase;
     color: $gray-color-1;
-    font-family: $font-family-header;
     font-size: 14px;
     letter-spacing: 3px;
 }
@@ -49,7 +51,6 @@ p {
     font-size: 40px;
     font-weight: normal;
     margin: 10px 0 30px;
-    font-family: $font-family-header;
 
     span {
         color: $orange-color-1;
@@ -69,14 +70,16 @@ p {
 }
 
 .orangeBtn {
-    padding: 12px 36px;
-    color: white;
     background-color: $orange-color-1;
     border: 1px solid transparent;
     border-radius: 20px;
-    transition: all 0.5s;
-    font-family: $font-family-header;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
     letter-spacing: 2px;
+    padding: 12px 36px;
+    transition: all 0.5s;
     text-transform: uppercase;
 
     &:hover,
@@ -86,59 +89,58 @@ p {
 }
 
 .orangeOutLineBtn {
-    padding: 12px 36px;
     color: $orange-color-1;
     background-color: white;
     border: 1px solid transparent;
     border-radius: 20px;
+    font-weight: bolder;
+    padding: 12px 36px;
     transition: all 0.5s;
-    font-family: $font-family-header;
-    letter-spacing: 2px;
     text-transform: uppercase;
+
     &:hover,
     &:active {
-        color: white;
         background-color: $orange-color-1;
+        color: white;
     }
 }
 
 .whiteBtn {
-    padding: 12px 36px;
     color: black;
     background-color: transparent;
     border: 1px solid transparent;
-    margin: 10px;
     border-radius: 20px;
-    transition: all 0.5s;
     font-size: 20px;
+    margin: 10px;
+    padding: 12px 36px;
+    transition: all 0.5s;
 
     &:hover,
     &:active,
     &.active {
-        color: $orange-color-1;
         background-color: white;
         box-shadow: $shadow-type-1;
+        color: $orange-color-1;
     }
 
 }
 
 .picture-wrapper {
-    width: 100%;
-    overflow: hidden;
-    transition: all 0.5s;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    overflow: hidden;
+    transition: all 0.5s;
+    width: 100%;
 
     img {
-        max-width: 100%;
-        height: auto;
         display: block;
+        height: auto;
+        max-width: 100%;
         transition: all 0.5s;
 
         &:hover {
             transform: scale(1.1);
-
         }
     }
 }
@@ -146,31 +148,32 @@ p {
 .price {
     color: $orange-color-1;
     font-weight: bold;
-    font-family: $font-family-header;
     letter-spacing: 2px;
 }
+
 .bg {
+    background-attachment: fixed;
     background-image: url(https://i.pinimg.com/564x/fa/06/d1/fa06d1b4887b342924d928ffa0b3b123.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100vw;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: -2;
 
     &::after {
+        background-color: $bg-color-yellow-2;
         content: '';
         display: block;
         width: 100vw;
         height: 100%;
-        background-color: $bg-color-yellow-2;
         opacity: 0.9;
         transition: all 0.5s;
     }
 }
+
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: $orange-color-1;
 }
