@@ -42,7 +42,7 @@ p {
 
 .headerSpan {
     text-transform: uppercase;
-    color: $gray-color-1;
+    color: $gray-color-2;
     font-size: 14px;
     letter-spacing: 3px;
 }
@@ -164,7 +164,7 @@ p {
     z-index: -2;
 
     &::after {
-        background-color: $bg-color-yellow-2;
+        background-color: $yellow-color-3;
         content: '';
         display: block;
         width: 100vw;

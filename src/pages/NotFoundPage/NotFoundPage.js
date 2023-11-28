@@ -9,7 +9,6 @@ export default function NotFoundPage() {
             <div className="flex-center">
                 <button style={{ marginRight: '20px' }} className='orangeBtn' onClick={() => { navigate('/Home') }} >BACK HOME</button>
                 <button className='orangeOutLineBtn' onClick={() => { navigate('/Contact') }} >CONTACT US</button>
-
             </div>
         </div>
     )

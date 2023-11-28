@@ -20,7 +20,7 @@
             line-height: 1.8;
 
             a {
-                color: $gray-color-2;
+                color: $gray-color-1;
                 text-decoration: none;
 
                 &:hover {
@@ -84,13 +84,13 @@
             }
 
             span {
-                color: $gray-color-1;
+                color: $gray-color-2;
                 font-size: 14px;
                 font-weight: bold;
             }
 
             p {
-                color: $gray-color-2;
+                color: $gray-color-1;
                 font-size: 16px;
                 font-weight: lighter;
                 width: 75%;
