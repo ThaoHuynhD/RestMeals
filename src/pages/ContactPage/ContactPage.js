@@ -9,14 +9,18 @@ export default function ContactPage() {
         <div className="grid">
           <ul>
             <li>
-              <i className="orangeBtn flex-center fa-solid fa-location-dot"></i>
+              <div className='orangeBtn flex-center '>
+                <i className="fa-solid fa-location-dot"></i>
+              </div>
               <div className="info">
                 <p>Location:</p>
                 <span>43 Raymouth Rd. Baltemoer, London 3910</span>
               </div>
             </li>
             <li>
-              <i className="orangeBtn flex-center fa-solid fa-clock"></i>
+              <div className='orangeBtn flex-center '>
+                <i className="fa-solid fa-clock"></i>
+              </div>
               <div className="info">
                 <p>Open Hours:</p>
                 <span>Sunday-Friday:</span>
@@ -24,14 +28,18 @@ export default function ContactPage() {
               </div>
             </li>
             <li>
-              <i className="orangeBtn flex-center fa-solid fa-envelope"></i>
+              <div className='orangeBtn flex-center '>
+                <i className="fa-solid fa-envelope"></i>
+              </div>
               <div className="info">
                 <p>Email:</p>
                 <span>info@Colorlib</span>
               </div>
             </li>
             <li>
-              <i className="orangeBtn flex-center fa-solid fa-phone"></i>
+              <div className='orangeBtn flex-center '>
+                <i className="fa-solid fa-phone"></i>
+              </div>
               <div className="info">
                 <p>Call:</p>
                 <span>+1 1234 55488 55</span>
