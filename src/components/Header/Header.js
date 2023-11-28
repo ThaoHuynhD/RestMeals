@@ -37,21 +37,27 @@ export default function Header() {
         });
     }, [selectedKey]);
     return (
-        <div id='resHeader'>
-            <div className={`bg-dark ${isAtTop ? '' : 'show'}`}></div>
-            <div className="container">
-                <NavLink className='logo' to={'/'}>RestMeals <i className="fa-solid fa-utensils"></i></NavLink>
-                <ul>
-                    {userNavLink.map((subject, index) => <li className='flex-center ' key={index}>
-                        <NavLink to={subject.path}
-                            onClick={() => handleButtonClick(subject.title)}
-                            className={`headerBtn ${subject.title} ${selectedKey === subject.title ? 'active' : ''}`}
-                        >{subject.title}</NavLink>
-                    </li>
-                    )}
-                </ul>
-                <button className='orangeBtn' onClick={() => { waitingUpdate() }} >BOOK A TABLE</button>
+        <div>
+            <div id='resHeader'>
+                <div className={`bg-dark ${isAtTop ? '' : 'show'}`}></div>
+                <div className="container">
+                    <NavLink className='logo' to={'/'}>RestMeals <i className="fa-solid fa-utensils"></i></NavLink>
+                    <ul>
+                        {userNavLink.map((subject, index) => <li className='flex-center ' key={index}>
+                            <NavLink to={subject.path}
+                                onClick={() => handleButtonClick(subject.title)}
+                                className={`headerBtn ${subject.title} ${selectedKey === subject.title ? 'active' : ''}`}
+                            >{subject.title}</NavLink>
+                        </li>
+                        )}
+                    </ul>
+                    <button className='orangeBtn' onClick={() => { waitingUpdate() }} >BOOK A TABLE</button>
+                </div>
             </div>
-        </div>
+            <div className={`fix-bottom-right ${isAtTop ? '' : 'show'}`}>
+                <button className='orangeBtn'
+                    onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>
+                    <i className="fa-solid fa-arrow-up"></i></button></div>
+        </div >
     )
 }
