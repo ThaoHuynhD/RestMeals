@@ -28,30 +28,28 @@ export default function AboutPage() {
             <h1 className='headerTitle'>Our <span>Professional Chef</span></h1>
           </div>
           <div className="chefList">
-            <div className='flex-center'>
-              {chefInfo.map((chef, index) => {
-                return <div className='chef_item' key={index}>
-                  <div className="picture-wrapper">
-                    <img src={chef.urlImg} alt={chef.name} />
-                  </div>
-                  <div className='title'>
-                    <div className=' bg-dark'>
-                      <h3>{chef.name}</h3>
-                      <span>{chef.jobTitile}</span>
-                      <div className='socialBtn'>
-                        <ul className='flex-center'>
-                          <li><button className='orangeOutLineBtn'
-                            onClick={() => { waitingUpdate() }}><i className="fa-brands fa-facebook-f"></i></button></li>
-                          <li><button className='orangeOutLineBtn'
-                            onClick={() => { waitingUpdate() }}><i className="fa-brands fa-instagram"></i></button></li>
-                          <li><button className='orangeOutLineBtn'
-                            onClick={() => { waitingUpdate() }}><i className="fa-brands fa-twitter"></i></button></li>
-                        </ul>
-                      </div>
-                    </div></div>
+            {chefInfo.map((chef, index) => {
+              return <div className='chef_item' key={index}>
+                <div className="picture-wrapper">
+                  <img src={chef.urlImg} alt={chef.name} />
                 </div>
-              })}
-            </div>
+                <div className='title'>
+                  <div className=' bg-dark'>
+                    <h3>{chef.name}</h3>
+                    <span>{chef.jobTitile}</span>
+                    <div className='socialBtn'>
+                      <ul className='flex-center'>
+                        <li><button className='orangeOutLineBtn'
+                          onClick={() => { waitingUpdate() }}><i className="fa-brands fa-facebook-f"></i></button></li>
+                        <li><button className='orangeOutLineBtn'
+                          onClick={() => { waitingUpdate() }}><i className="fa-brands fa-instagram"></i></button></li>
+                        <li><button className='orangeOutLineBtn'
+                          onClick={() => { waitingUpdate() }}><i className="fa-brands fa-twitter"></i></button></li>
+                      </ul>
+                    </div>
+                  </div></div>
+              </div>
+            })}
           </div>
         </div>
       </section>

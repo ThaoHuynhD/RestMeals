@@ -61,7 +61,7 @@
 
         .event__item {
             grid-template-columns: repeat(1, 1fr);
-            grid-area: 20px;
+            grid-gap: 20px;
 
             p.headerTitle {
                 margin: 0;
@@ -78,11 +78,6 @@
 
             .picture-wrapper {
                 height: 400px;
-
-                img {
-                    width: fit-content;
-                    height: fit-content;
-                }
             }
         }
     }

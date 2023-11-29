@@ -34,10 +34,11 @@
 
 #chefInfo {
     .chefList {
-        .flex-center {
-            gap: 50px;
-            margin: 0 50px;
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin: 0 50px;
 
         .chef_item {
             margin: 20px;
@@ -63,6 +64,11 @@
 
                     &:hover {
                         color: $color-orange-1;
+                        text-shadow:
+                            -1px -1px 20px white,
+                            1px -1px 20px white,
+                            -1px 1px 20px white,
+                            1px 1px 20px white;
                     }
                 }
 
@@ -109,7 +115,7 @@
             .picture-wrapper {
                 border-radius: 10px;
                 position: relative;
-                height: 400px;
+                max-height: 400px;
 
                 img {
                     z-index: -1;
@@ -121,6 +127,34 @@
         .chef_item:hover .title {
             transform: translateY(0);
             top: 0;
+        }
+    }
+}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {
+    #chooseUs {
+        .chooseList {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    #chefInfo {
+        .chefList {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+
+            .chef_item {
+                width: 100%;
+                max-width: 600px;
+                margin: auto;
+
+                .picture-wrapper {
+                    max-height: 700px;
+                }
+            }
         }
     }
 }
