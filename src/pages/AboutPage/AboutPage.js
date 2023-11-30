@@ -2,6 +2,7 @@ import React from 'react'
 import './AboutPage.scss'
 import { waitingUpdate } from '../../components/UpdateFunction/UpdateFunction'
 import { chefInfo, chooseUsData } from '../../fakeData/AboutPageData'
+import BookTable from '../../components/BookTable'
 export default function AboutPage() {
   return (
     <div>
@@ -53,6 +54,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      <BookTable />
     </div>
   )
 }

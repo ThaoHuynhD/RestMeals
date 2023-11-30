@@ -14,7 +14,7 @@ export default function ContactPage() {
               </div>
               <div className="info">
                 <p>Location:</p>
-                <span>43 Raymouth Rd. Baltemoer, London 3910</span>
+                <span>District 10. Ho Chi Minh City</span>
               </div>
             </li>
             <li>
@@ -24,7 +24,7 @@ export default function ContactPage() {
               <div className="info">
                 <p>Open Hours:</p>
                 <span>Sunday-Friday:</span>
-                <span>11:00 AM - 2300 PM</span>
+                <span>11:00 AM - 23:00 PM</span>
               </div>
             </li>
             <li>
@@ -33,7 +33,7 @@ export default function ContactPage() {
               </div>
               <div className="info">
                 <p>Email:</p>
-                <span>info@Colorlib</span>
+                <span>thaohuynh34.678@gmail.com</span>
               </div>
             </li>
             <li>

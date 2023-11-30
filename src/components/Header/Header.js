@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 import { waitingUpdate } from '../UpdateFunction/UpdateFunction'
 import { useDispatch, useSelector } from 'react-redux';
 import { SET_SELECTED_KEY, START_LOADING } from '../../constant/constant';
+import BookATable from '../../function/BookATablePopup/BookATablePopup';
 
 export default function Header() {
     const [isMobileWidth, setIsMobileWidth] = useState(window.innerWidth <= 767);
@@ -88,7 +89,7 @@ export default function Header() {
                                 </li>
                                 )}
                             </ul>
-                            <button className='orangeBtn' onClick={() => { waitingUpdate() }} >BOOK A TABLE</button>
+                            <BookATable />
                         </div>
                     </div>
                 </div>

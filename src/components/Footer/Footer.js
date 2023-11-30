@@ -22,19 +22,19 @@ export default function Footer() {
                         <Testimonials />
                     </ul>
                     <ul className='col'>
-                        <h2>Projects</h2>
-                        <li><NavLink to={'/'} onClick={() => { handleButtonClick('Home') }}>Web Design</NavLink></li>
-                        <li><NavLink to={'/'} onClick={() => { handleButtonClick('Home') }}>HTML5</NavLink></li>
-                        <li><NavLink to={'/'} onClick={() => { handleButtonClick('Home') }}>CSS3</NavLink></li>
-                        <li><NavLink to={'/'} onClick={() => { handleButtonClick('Home') }}>jQuery</NavLink></li>
-                        <li><NavLink to={'/'} onClick={() => { handleButtonClick('Home') }}>Bootstrap</NavLink></li>
+                        <h2>About Us</h2>
+                        <li><NavLink to={'/'} onClick={() => { handleButtonClick('Home') }}>Hot Deals</NavLink></li>
+                        <li><NavLink to={'/'} onClick={() => { handleButtonClick('Home') }}>New Products</NavLink></li>
+                        <li><NavLink to={'/'} onClick={() => { handleButtonClick('Home') }}>Our Journey</NavLink></li>
+                        <li><NavLink to={'/'} onClick={() => { handleButtonClick('Home') }}>Promotion News</NavLink></li>
+                        <li><NavLink to={'/'} onClick={() => { handleButtonClick('Home') }}>Book A Seat</NavLink></li>
                     </ul>
                     <ul className='col'>
-                        <h2>Services</h2>
-                        <li><NavLink to={'/'} onClick={() => { handleButtonClick('Home') }}>Design</NavLink></li>
-                        <li><NavLink to={'/'} onClick={() => { handleButtonClick('Home') }}>Front-end</NavLink></li>
-                        <li><NavLink to={'/'} onClick={() => { handleButtonClick('Home') }}>Code</NavLink></li>
-                        <li><NavLink to={'/'} onClick={() => { handleButtonClick('Home') }}>Developer</NavLink></li>
+                        <h2>Policy</h2>
+                        <li><NavLink to={'/'} onClick={() => { handleButtonClick('Home') }}>Operation Policy</NavLink></li>
+                        <li><NavLink to={'/'} onClick={() => { handleButtonClick('Home') }}>Terms & Condition</NavLink></li>
+                        <li><NavLink to={'/'} onClick={() => { handleButtonClick('Home') }}>Delivery Policy</NavLink></li>
+                        <li><NavLink to={'/'} onClick={() => { handleButtonClick('Home') }}>Hire news</NavLink></li>
                     </ul>
                     <ul className='col col-contact'>
                         <h2>Contact</h2>
