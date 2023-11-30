@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Header.scss'
 import { NavLink } from 'react-router-dom'
-import { waitingUpdate } from '../UpdateFunction/UpdateFunction'
+import { waitingUpdate } from '../../function/UpdateFunction/UpdateFunction'
 import { useDispatch, useSelector } from 'react-redux';
 import { SET_SELECTED_KEY, START_LOADING } from '../../constant/constant';
 import BookATable from '../../function/BookATablePopup/BookATablePopup';
@@ -94,8 +94,6 @@ export default function Header() {
                     </div>
                 </div>
             }
-
-
             <div className={`fix-bottom-right ${isAtTop ? '' : 'show'}`}>
                 <button className='orangeBtn'
                     onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>

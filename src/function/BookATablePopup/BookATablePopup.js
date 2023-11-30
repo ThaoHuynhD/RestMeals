@@ -6,20 +6,20 @@ export default function BookATable() {
     const [formData, setFormData] = useState({
         name: '',
         phoneNumber: '',
-        date: '',
-        time: '',
+        datetime: '',
         message: '',
     });
-    console.log("formData: ", formData);
-    let getCurrentDate = () => {
-        const today = new Date();
-        const year = today.getFullYear();
-        let month = today.getMonth() + 1;
-        let day = today.getDate();
-        month = month < 10 ? '0' + month : month;
-        day = day < 10 ? '0' + day : day;
-        return `${year}-${month}-${day}`;
+
+    function getCurrentDate() {
+        return new Date().toISOString().slice(0, 16);
     }
+
+    function getMaxDate() {
+        const maxDate = new Date();
+        maxDate.setMonth(maxDate.getMonth() + 3);
+        return maxDate.toISOString().slice(0, 16);
+    }
+
     let hadleShowBookingMessage = () => {
         alert('Thank you for your request. We will call you as soon as possible to confirm your request!');
     }
@@ -56,14 +56,12 @@ export default function BookATable() {
                                 />
                             </div>
                             <div className="flex-center">
-                                <input type="date" name="date"
+                                <input type="datetime-local" name="datetime"
                                     value={formData.date}
                                     onChange={handleChange}
-                                    min={getCurrentDate()} required
-                                />
-                                <input type="time" name="time"
-                                    value={formData.time}
-                                    onChange={handleChange} required
+                                    min={getCurrentDate()}
+                                    max={getMaxDate()}
+                                    required
                                 />
                             </div>
                             <div className="flex-center">
