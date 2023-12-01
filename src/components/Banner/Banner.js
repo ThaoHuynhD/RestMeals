@@ -1,7 +1,7 @@
 import React from 'react'
 import './Banner.scss'
 import { bannerData } from '../../fakeData/BannerData'
-import { waitingUpdate } from '../UpdateFunction/UpdateFunction'
+import { waitingUpdate } from '../../function/UpdateFunction/UpdateFunction';
 
 export default function Banner() {
     let key = 'Home';

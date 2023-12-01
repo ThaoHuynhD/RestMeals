@@ -1,8 +1,9 @@
 import React from 'react'
 import './AboutPage.scss'
-import { waitingUpdate } from '../../components/UpdateFunction/UpdateFunction'
 import { chefInfo, chooseUsData } from '../../fakeData/AboutPageData'
 import BookTable from '../../components/BookTable'
+import { waitingUpdate } from '../../function/UpdateFunction/UpdateFunction'
+
 export default function AboutPage() {
   return (
     <div>

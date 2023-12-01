@@ -1,6 +1,6 @@
 import React from 'react'
 import './ContactPage.scss'
-import { waitingUpdate } from '../../components/UpdateFunction/UpdateFunction'
+import { waitingUpdate } from '../../function/UpdateFunction/UpdateFunction'
 
 export default function ContactPage() {
   return (

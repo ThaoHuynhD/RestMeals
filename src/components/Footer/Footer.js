@@ -1,10 +1,10 @@
 import React from 'react'
 import './Footer.scss'
 import { NavLink } from 'react-router-dom'
-import { waitingUpdate } from '../UpdateFunction/UpdateFunction'
 import Testimonials from './Testimonials'
 import { useDispatch } from 'react-redux'
 import { SET_SELECTED_KEY } from '../../constant/constant'
+import { waitingUpdate } from '../../function/UpdateFunction/UpdateFunction';
 
 export default function Footer() {
     const dispatch = useDispatch();
